@@ -41,7 +41,7 @@ Este repositorio contiene los archivos de configuración de mi sistema **NixOS**
 ### 🧰 Utilidades
 - `wget`, `curl`, `htop`, `neofetch`, `btop`
 - **Remmina** (escritorio remoto)
-- `zsh` como shell principal
+- `bash` como shell principal
 
 ---
 
