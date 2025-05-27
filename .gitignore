@@ -1,0 +1,17 @@
+# Archivos temporales de editores
+*.swp
+*.swo
+*.swn
+*~
+
+# Resultados de builds simbólicos (home-manager, nix build, etc.)
+result
+result-*
+
+# Archivos de caché o nix-store innecesarios
+*.drv
+*.gcda
+*.gcno
+
+# Otros
+.cache/
