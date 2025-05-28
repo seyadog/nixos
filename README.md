@@ -103,10 +103,17 @@ All configuration is centralized under:
 
 ---
 
-## 📜 License
+## 🛡️ License
 
-This repository is licensed under the **MIT License**.  
-See the [LICENSE](./LICENSE) file for more information.
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+What this means:
+- You are free to use, study, modify, and share this code.
+- Any distributed version (modified or not) must remain under the same license.
+- It encourages free software and open collaboration.
+
+For full details, see the [`LICENSE`](./LICENSE) file included in this repository,  
+or read the complete license text at [gnu.org/licenses/gpl-3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 > This project serves as a personal backup, reference, and starting point for future NixOS setups. Feel free to explore or adapt it for your own configuration.
 
