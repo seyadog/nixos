@@ -1,10 +1,10 @@
---# 🐧 nixos-config
+# 🐧 nixos-config
 
 This repository contains the configuration files of my **NixOS** system, located under `/etc/nixos`. It uses the declarative and reproducible infrastructure provided by the **Nix package manager** and **NixOS module system** to manage the entire system — from hardware and users to desktops and developer tools.
 
 ---
 
-## ✨ Why NixOS
+##  Why NixOS?
 
 **NixOS** is a Linux distribution built on the [Nix package manager](https://nixos.org/), designed with reproducibility, atomic upgrades, and declarative configuration in mind.
 
