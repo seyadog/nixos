@@ -155,11 +155,12 @@ windowManager.qtile.enable = true;
   ### Development
   vscode                   # Visual Studio Code IDE
   arduino-ide              # Arduino development environment
+  jetbrains.idea-community #For Java
 
   ### Productivity
   obsidian                 # Markdown knowledge base
   onlyoffice-desktopeditors  # Office suite
-  notion-app              #Notion as knowledge data base :)
+  #notion-app              #Notion as knowledge data base :)
 
   ### Communication
   bitwarden                # Password manager
