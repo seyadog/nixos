@@ -136,43 +136,60 @@ windowManager.qtile.enable = true;
 
   environment.systemPackages = with pkgs; [
 
-	home-manager
-	
+  ### System Essentials
+  vim                      # Text editor
+  wget                     # Download tool
+  curl                     # Command-line HTTP client
+  git                      # Version control
+  gh                       # GitHub CLI
+  fastfetch                # System info fetcher
+  htop                     # Process viewer
+  libnotify                # Desktop notification library
 
-  	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
- 	wget
-	fastfetch
-	htop
-	git
-	gh
-	alacritty
-	curl
-	vscode
-	bitwarden
-	spotify
-	telegram-desktop
-	discord
-	arduino-ide
-	obsidian
-	remmina
-	onlyoffice-desktopeditors
-	vlc
-	micro
-	helix
+  ### Terminal Emulators & Utilities
+  alacritty                # GPU-accelerated terminal emulator
+  kitty                    # Feature-rich GPU terminal
+  micro                   # Terminal-based text editor
+  helix                   # Modern modal text editor
 
-	picom
-	#for hyprland
-	waybar
-	rofi-wayland
-	kitty
-	(pkgs.waybar.overrideAttrs (oldAttrs: {
-	mseonFlags = oldAttrs.mesonFlags ++ ["-Dexperimental=true" ];
-	}))
-	pkgs.dunst
-	libnotify
-	yazi
-	hyprpaper
-  ];
+  ### Development
+  vscode                   # Visual Studio Code IDE
+  arduino-ide              # Arduino development environment
+
+  ### Productivity
+  obsidian                 # Markdown knowledge base
+  onlyoffice-desktopeditors  # Office suite
+  notion-app              #Notion as knowledge data base :)
+
+  ### Communication
+  bitwarden                # Password manager
+  telegram-desktop         # Messaging app
+  discord                  # Voice/text chat for communities
+
+  ### Media
+  spotify                  # Music streaming
+  vlc                      # Media player
+
+  ### Remote Access
+  remmina                  # Remote desktop client
+
+  ### Window Manager / Compositor (Wayland + Hyprland)
+  waybar                   # Status bar for Wayland
+  (pkgs.waybar.overrideAttrs (oldAttrs: {
+    mesonFlags = oldAttrs.mesonFlags ++ ["-Dexperimental=true"];
+  }))
+  rofi-wayland             # App launcher for Wayland
+  dunst                    # Notification daemon
+  picom                   # X compositor (note: not for Wayland)
+  hyprpaper                # Wallpaper daemon for Hyprland
+
+  ### File Managers
+  yazi                     # Terminal file manager
+
+  ### Nix Tools
+  home-manager             # Manage user config declaratively
+
+];
 
 
   # Some programs need SUID wrappers, can be configured further or are
