@@ -131,7 +131,14 @@ windowManager.qtile.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   environment.systemPackages = with pkgs; [
+
+	home-manager
+	
+
   	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
  	wget
 	fastfetch
@@ -150,6 +157,8 @@ windowManager.qtile.enable = true;
 	remmina
 	onlyoffice-desktopeditors
 	vlc
+	micro
+	helix
 
 	picom
 	#for hyprland
